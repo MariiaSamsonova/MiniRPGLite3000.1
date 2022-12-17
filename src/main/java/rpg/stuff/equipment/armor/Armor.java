@@ -1,7 +1,7 @@
 package rpg.stuff.equipment.armor;
 
 public class Armor {
-    String sign = "simple armor";
+    String sign = "basic armor";
 
     private int state;
     double damagePart;

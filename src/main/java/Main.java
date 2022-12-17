@@ -28,35 +28,37 @@ public class Main {
             heroes.add(hero);
         }
         game.setHeroes(heroes);
+while(true){
+    while (game.getFightNumber() < 5 && game.countHeroes() > 0) {//default number of fights = 5 TODO set number of fights
 
-        while (game.getFightNumber() < 5 && game.countHeroes() > 0) {//default number of fights = 5 TODO set number of fights
+        game.setEnemies(n);
+        game.ip.printl(game.combatants.toString());
 
-            game.setEnemies(n);
-            game.ip.printl(game.combatants.toString());
-
-            game.ip.doSomethingToContinue();
-            game.ip.printl("Fight №" + game.getFightNumber());
-            game.ip.printl("Set the queue of moves:");
-            List<Integer> order = game.setMoveOrder();
-            Thread.sleep(900);
+        game.ip.doSomethingToContinue();
+        game.ip.printl("Fight №" + game.getFightNumber());
+        game.ip.printl("Set the queue of moves:");
+        List<Integer> order = game.setMoveOrder();
+        Thread.sleep(900);
 
 
-            while (game.countHeroes() > 0 && game.countEnemies() > 0)//1 fight
-            {
-                for (int i : order) {
-                    if (game.combatants.get(i).isAlive()) {
-                        game.combatants.get(i).makeMove(game);
+        while (game.countHeroes() > 0 && game.countEnemies() > 0)//1 fight
+        {
+            for (int i : order) {
+                if (game.combatants.get(i).isAlive()) {
+                    game.combatants.get(i).makeMove(game);
 
-                        game.printCombatantsByMoveOrder(order);
-                        game.ip.doSomethingToContinue();
-                    }
-                    if(game.countHeroes() == 0 && game.countEnemies() == 0)
-                    {
-                        break;
-                    }
+                    game.printCombatantsByMoveOrder(order);
+                    game.ip.doSomethingToContinue();
+                }
+                if(game.countHeroes() == 0 && game.countEnemies() == 0)
+                {
+                    break;
                 }
             }
-            game.endFight();
         }
+        game.endFight();
+    }
+}
+
     }
 }

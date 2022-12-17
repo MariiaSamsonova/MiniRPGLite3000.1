@@ -10,7 +10,7 @@ public class Hunter extends Hero {
     public Hunter(String name){
         super(name);
         this.sign = "🏹";
-        this.weapon = new Bow(3);
+        this.weapon = new Bow(10);
     }
 
     @Override
