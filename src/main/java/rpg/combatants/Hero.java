@@ -5,6 +5,8 @@ import rpg.stuff.equipment.armor.Armor;
 import rpg.stuff.equipment.weapon.Weapon;
 import utils.InputParser;
 
+import java.util.Scanner;
+
 public abstract class Hero extends Combatant {
 
     Weapon weapon;
@@ -26,7 +28,7 @@ public abstract class Hero extends Combatant {
         game.printGameInfo();
         printMoveInfo(game.ip);
         while(true){
-            game.ip.printl("0 - hit, 1 - eat(+25 health)");
+            game.ip.printl(" 0 - hit,\n 1 - eat(+25 health)");
 
             int action = game.ip.getInteger();
             switch (action) {
@@ -129,6 +131,7 @@ public abstract class Hero extends Combatant {
     public boolean doHaveArmor() {
         return this.armor.isServiceable();
     }
+
     //• уменьшить расход маны для mage and healer, или увеличить эффективность их заклинаний.
 
     //make move

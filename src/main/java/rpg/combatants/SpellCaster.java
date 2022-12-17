@@ -20,11 +20,11 @@ abstract class SpellCaster extends Hero {
         printMoveInfo(game.ip);
         game.ip.printl("Heal: " + this.weapon.getHeal());
 
-        game.ip.printl("0 - use potion (+50 mana), 1 - eat(+25 health), 2 - heal, 3 - hit");
+        game.ip.printl(" 0 - hit,\n 1 - eat(+25 health),\n 2 - heal,\n 3 - use potion (+50 mana)");
 
         int action = game.ip.getInteger();
         switch (action) {
-            case 3:
+            case 0:
                 if(this.mana > 10){
                     this.mana -= 10;
                     hit(game);
@@ -40,7 +40,7 @@ abstract class SpellCaster extends Hero {
                     game.choseHero().heal();
                 }
                 return;
-            case 0:
+            case 3:
                 usePotion(game);
         }
 
@@ -67,6 +67,7 @@ abstract class SpellCaster extends Hero {
         ip.printl("Your armor: " + this.armor + ". " +
                 "State: " + this.armor.getState() + "%. " +
                 "Protection: " + (int) (100 - this.armor.getDamagePart() * 100) + "%");
+
     }
 
     @Override

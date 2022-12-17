@@ -46,10 +46,6 @@ public class Main {
                 for (int i : order) {
                     if (game.combatants.get(i).isAlive()) {
                         game.combatants.get(i).makeMove(game);
-                        if(game.combatants.get(i) instanceof Hero)
-                        {
-                            ((Hero) game.combatants.get(i)).printMoveInfo(game.ip);
-                        }
 
                         game.printCombatantsByMoveOrder(order);
                         game.ip.doSomethingToContinue();
