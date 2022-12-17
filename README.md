@@ -18,22 +18,15 @@ Befor the game you can choose the amount and classes of your heroes.
 
 In the game you have:
   4 types of heroes:
-                    Hero         arrmor             weapon (demage)         consumables
-                    Hunter 🏹    basic              Bow 🏹                 10 arrows
-                    Warrior ⚔    basic + shield 🛡  Sword ⚔         
-                    Mage 🧙      basic              MageStaff ⚚     
-                    Healer 🧝    basic              HealerStaff ⚚
+  ![image](https://user-images.githubusercontent.com/82842339/208246395-cb834326-77ec-411b-a98c-ac8f636dc0a1.png)
 
-Mage and Healer have mana(100 befor the game). It takes 10 mana point for on move. THey can't make move if there are not enoph of mana points.
+Mage and Healer have mana(100 befor the game). It takes 10 mana point for on move. They can't make move if there are not enoph of mana points.
 
 Arrmor:
        basic armor - 20% protaction, breaks over time.
        shield - 100% protection, breaks over time.
 Weapon:
-                      demage  heal
-      Bow 🏹          +40     
-      Sword ⚔         +10     
-      MageStaff ⚚     +10     +10
-      HealerStaff ⚚           +30
+![image](https://user-images.githubusercontent.com/82842339/208246440-ac325a8e-3a12-4e21-bf26-f69e97360494.png)
+
       
 The project was tested with alfa and betta testing. And with Unit tests(in the file "UTest")
