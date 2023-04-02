@@ -1,6 +1,6 @@
-# MiniRPGLite3000.1
+# Monster Hunter’s Guild
 
-Present to your attention: Mini RPG 3000.1 
+Present to your attention: Monster Hunter’s Guild
 
 Befor each game you have: 
   Food: 🍏x4      (+25 health)
