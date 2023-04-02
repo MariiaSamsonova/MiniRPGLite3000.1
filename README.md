@@ -29,4 +29,4 @@ Weapon:
 ![image](https://user-images.githubusercontent.com/82842339/208246440-ac325a8e-3a12-4e21-bf26-f69e97360494.png)
 
       
-The project was tested with alfa and betta testing. And with Unit tests(in the file "UTest")
+The project was tested with alfa and betta testing. (And with Unit tests)
